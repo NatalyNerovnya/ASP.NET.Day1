@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortJaggedArray", "SortJagg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortJaggedArrayTest", "SortJaggedArrayTest\SortJaggedArrayTest.csproj", "{3B866DC3-9A40-486B-AE95-01AEA661C03A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Root", "Root\Root.csproj", "{1CD9AF74-9F36-49D5-AC03-56A774ADE406}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RootTest", "RootTest\RootTest.csproj", "{664678AA-3627-4081-AED6-D4DB97C4D49D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{3B866DC3-9A40-486B-AE95-01AEA661C03A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B866DC3-9A40-486B-AE95-01AEA661C03A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B866DC3-9A40-486B-AE95-01AEA661C03A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CD9AF74-9F36-49D5-AC03-56A774ADE406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CD9AF74-9F36-49D5-AC03-56A774ADE406}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CD9AF74-9F36-49D5-AC03-56A774ADE406}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CD9AF74-9F36-49D5-AC03-56A774ADE406}.Release|Any CPU.Build.0 = Release|Any CPU
+		{664678AA-3627-4081-AED6-D4DB97C4D49D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{664678AA-3627-4081-AED6-D4DB97C4D49D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{664678AA-3627-4081-AED6-D4DB97C4D49D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{664678AA-3627-4081-AED6-D4DB97C4D49D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
