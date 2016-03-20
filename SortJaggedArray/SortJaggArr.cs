@@ -41,7 +41,7 @@ namespace SortJaggedArray
         /// <param name="arr">Array for sorting</param>
         public static void SortArray(int[][] arr)
         {
-            CompareByMaxValue comp = new CompareByMaxValue();
+            CompareDefault comp = new CompareDefault();
             SortArray(arr, comp);
         }
         #endregion
