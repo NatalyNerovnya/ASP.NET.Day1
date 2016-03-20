@@ -20,10 +20,12 @@ namespace Root
         /// <returns></returns>
         public static double CustomRoot(double val, int deg, double acc = 0.0001)
         {
-            if(val == 0.0 || deg == 0.0 || acc == 0)
+            if(val == 0.0 || deg == 0 || acc == 0 || val == Double.NaN)
                 throw new ArgumentException();
             if(val < 0)
                 throw new ArgumentException();
+            if (deg < 0)
+                return (double)1 / CustomRoot(val, Math.Abs(deg), acc);
             
             double x = 1;
             double xNext = 0;
