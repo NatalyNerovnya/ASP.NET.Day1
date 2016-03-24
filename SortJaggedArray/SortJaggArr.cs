@@ -17,10 +17,20 @@ namespace SortJaggedArray
         /// </summary>
         /// <param name="arr">Array for sorting</param>
         /// <param name="comparer">Comparer according to which array will be sorted</param>
-
         public static void SortArray(int[][] arr, IComparer<int[]> comparer)
         {
-            
+            if(arr == null || comparer == null)
+                throw new ArgumentNullException();
+            SortArray(arr,comparer.Compare);
+        }
+
+        /// <summary>
+        /// Sorting method with users' comparer
+        /// </summary>
+        /// <param name="arr">Array for sorting</param>
+        /// <param name="comparer">Comparer according to which array will be sorted</param>
+        public static void SortArray(int[][] arr, Comparison<int[]> comparer)
+        {
             if (comparer == null || arr == null)
                 throw new ArgumentNullException();
 
@@ -28,12 +38,13 @@ namespace SortJaggedArray
             {
                 for (int j = i + 1; j < arr.Length; j++)
                 {
-                    if (comparer.Compare(arr[i], arr[j]) == 1)
+                    if (comparer(arr[i], arr[j]) == 1)
                     {
                         Swap(ref arr[i], ref arr[j]);
                     }
                 }
             }
+
         }
         /// <summary>
         /// Sorting according the greatest element in the raw
