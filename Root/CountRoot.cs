@@ -12,6 +12,7 @@ namespace Root
     /// </summary>
     public class CountRoot
     {
+        #region Public Methods
         /// <summary>
         /// Сalculates the root of the n-th degree of the value by Newton's method with the specified accuracy
         /// </summary>
@@ -39,6 +40,10 @@ namespace Root
                 x = xNext;
             }
         }
+
+        #endregion
+
+        #region Private Methods
         /// <summary>
         /// Count the power of the number
         /// </summary>
@@ -90,5 +95,7 @@ namespace Root
         {
             return (int) Module((double)x);
         }
+
+#endregion
     }
 }
